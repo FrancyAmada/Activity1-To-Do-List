@@ -98,12 +98,6 @@ p.taskInfo {
   text-align: left;
 }
 
-button.taskCompletionButton {
-  background-color: transparent;
-  width: 100%;
-  margin-right: 4px;
-}
-
 button.delete {
   border-radius: 16px;
   border: 1px solid white;
