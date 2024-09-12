@@ -43,8 +43,17 @@ input[type=text] {
 }
 
 div.input_field {
+  padding-top: 12px;
   padding-bottom: 12px;
   border-bottom: 4px dotted whitesmoke;
+}
+
+div.sortMenuDiv {
+  margin: 5px;
+}
+
+.sortMenu {
+  min-height: max-content;
 }
 
 .to_do_list {
@@ -66,7 +75,7 @@ li {
   padding: 0;
 }
 
-div.task {
+li.task {
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -80,15 +89,36 @@ div.task {
   align-items: center;
 }
 
-div.task:hover {
+li.task:hover {
   scale: 1.05;
   background-color: #e3e3e3;
   box-shadow: 0px 0px 8px 4px rgba(245, 245, 245, 0.871);
   transition-duration: 0.3s;
 }
 
-div.task.completed {
+li.task.completed {
   background-color: #2ee222;
+}
+
+li.task.expired {
+  background-color: #e71717;
+}
+
+div.task_date_content {
+  width: 100%;
+  max-width: 100px;
+  margin-right: 8px;
+  font-size: xx-small;
+}
+
+div.date_time_separator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  align-items: center;
+  border: 2px solid black;
+  padding: 2px;
+  background-color: #e3e3e3;
 }
 
 p.taskInfo {
@@ -98,6 +128,13 @@ p.taskInfo {
   text-align: left;
 }
 
+p.taskDateInfo {
+  color: #1a1a1a;
+  text-align: left;
+  font-weight: bold;
+  margin: 0px 4px;
+}
+
 button.delete {
   border-radius: 16px;
   border: 1px solid white;
@@ -105,6 +142,13 @@ button.delete {
   background-color: #c10c0c;
   min-height: 50px;
   max-height: 50px;
+}
+
+button.sort_button {
+  padding: 4px 12px;
+  margin: 1px;
+
+  border: 1px solid white;
 }
 
 button {
